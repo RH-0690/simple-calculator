@@ -1,0 +1,19 @@
+# is a basic calculator
+
+num1 = float(input("Enter your number:"))
+Op = input("enter your operator, * = multiplier, / = Division, + = plus, - = minus:")
+num2 = float(input("enter your 2nd number:"))
+result = (num1, Op, num2)
+
+if Op == "+":                 
+    result = (num1 + num2)   
+elif Op == "-":
+    result = (num1 - num2)
+elif Op == "/":
+    result = (num1 / num2)
+elif Op == "*":
+    result = (num1 * num2)
+if Op == "+" or Op == "-" or Op == "/" or Op == "*":
+    print(result)
+else:
+    print("invalid_operator")
